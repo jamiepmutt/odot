@@ -8,7 +8,7 @@ describe TodoItem do
 
   	it "is false when completed_is blank" do
   		todo_item.completed_at = nil
-  		expect(todo_item.completed?). be_false
+  		expect(todo_item.completed?).to be_false
   	end
 
   	it "returns true when completed_at is not empty" do
